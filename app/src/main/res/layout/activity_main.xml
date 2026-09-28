@@ -1,32 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AllTools"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="50+ Useful Tools"
-        android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AllTools"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Welcome to AllTools"
-        android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="50+ Useful Tools"
+            android:textSize="15sp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:hint="Search tools..."
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Featured Tools"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/weddingButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Wedding Card Maker" />
+
+        <Button
+            android:id="@+id/statusButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Status Maker" />
+
+        <Button
+            android:id="@+id/reelsButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Reels Maker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tools"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/textToolsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Text Tools" />
+
+        <Button
+            android:id="@+id/imageToolsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Image Tools" />
+
+        <Button
+            android:id="@+id/pdfToolsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="PDF Tools" />
+
+        <Button
+            android:id="@+id/calculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Calculator" />
+
+        <Button
+            android:id="@+id/developerButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Developer Tools" />
+
+    </LinearLayout>
+
+</ScrollView>
